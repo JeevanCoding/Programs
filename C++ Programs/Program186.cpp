@@ -1,0 +1,38 @@
+
+// 25/10/2021
+
+#include<iostream>
+
+using namespace std;
+
+class Marvellous
+{
+	public:
+	     int Addition(int x,int y)
+		 {
+			 int iAns=0;
+			 iAns=x+y;
+			 
+			 return iAns;
+		 }	
+};
+
+
+int main()
+{
+	int iNo1=0,iNo2=0,iRet=0;
+	Marvellous mobj;  // Marvellous mobj=new Marvellous();  in java
+	
+	cout<<"Enter first number\n";
+	cin>>iNo1;              // scanf("%d",&iNo1);
+    
+	cout<<"Enter second number\n";
+	cin>>iNo2;             //  scanf("%d",&iNo2);
+	
+	iRet=mobj.Addition(iNo1,iNo2);   // iNo1+iNo2 ...if without object
+	
+	cout<<"Addition is:"<<iRet<<"\n";
+	
+
+	return 0;
+}
